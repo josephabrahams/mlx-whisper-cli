@@ -1,0 +1,21 @@
+[project]
+name = "mlx-whisper-cli"
+version = "0.1.0"
+description = "A whisper command with OpenAI-compatible arguments, backed by mlx-whisper on Apple Silicon"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = [
+    "mlx-whisper>=0.4.3",
+]
+
+[project.scripts]
+whisper = "whisper:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/whisper"]
