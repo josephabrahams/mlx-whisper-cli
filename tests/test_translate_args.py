@@ -1,4 +1,4 @@
-from whisper import MODEL_ALIASES, translate_args
+from mlx_whisper_cli import MODEL_ALIASES, translate_args
 
 TURBO = MODEL_ALIASES["turbo"]
 

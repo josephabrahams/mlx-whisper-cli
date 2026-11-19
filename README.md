@@ -84,7 +84,7 @@ uv run whisper ~/Downloads/meeting.mp4
 uv run pytest
 ```
 
-To make your working copy the global `whisper`, install it in editable mode, so changes to `src/whisper/__init__.py` take effect without reinstalling:
+To make your working copy the global `whisper`, install it in editable mode, so changes to `src/mlx_whisper_cli/__init__.py` take effect without reinstalling:
 
 ```sh
 uv tool install --editable .
